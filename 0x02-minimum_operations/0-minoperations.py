@@ -3,6 +3,7 @@
 Minimum Operations
 """
 
+
 def minOperations(n):
     """
     This is a function that can execute only two operations
