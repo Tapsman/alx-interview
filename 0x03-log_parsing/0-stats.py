@@ -49,7 +49,7 @@ try:
                 rankcode[stlist[-2]] += 1
         except Exception:
             pass
-        printRank(rankcode, size)
+    printRank(rankcode, size)
 
 
 except KeyboardInterrupt:
