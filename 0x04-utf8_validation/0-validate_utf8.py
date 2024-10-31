@@ -16,11 +16,11 @@ def validUTF8(data):
 
     for i in data:
         if num_byte == 0:
-            if i >> 5 == 0b110 or i >> 5 == 0b11110:
+            if i >> 5 == 0b110 or i >> 5 == 0b1110:
                 num_byte = 1
-            elif i >> 4 == 0b11110:
+            elif i >> 4 == 0b1110:
                 num_byte = 2
-            elif i >> 3 == 0b111110:
+            elif i >> 3 == 0b11110:
                 num_byte = 3
             elif i >> 7 == 0b1:
                 return False
