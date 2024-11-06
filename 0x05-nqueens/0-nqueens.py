@@ -22,7 +22,7 @@ if __name__ == "__main__":
     sol = []
     pos_queens = []
     # This is the coordinates of the queens format, row and column
-    rest = False
+    stop = False
     row = 0
     column = 0
 
@@ -37,7 +37,7 @@ if __name__ == "__main__":
             for cord in pos_queens:
                 col = cord[1]
                 if (col == column or col + (row-cord[0]) == column or
-                         col - (row-cord[0]) == column):
+                        col - (row-cord[0]) == column):
                     safe = False
                     break
 
@@ -91,7 +91,8 @@ if __name__ == "__main__":
             continue
         row = row + 1
 
-        if idx == len(solutions) - 1:
-            print(val, end='')
-        else:
-            print(val)
+        for idx, val in enumerate(solutions):
+            if idx == len(solutions):
+                print(val, end='')
+            else:
+                print(val)
