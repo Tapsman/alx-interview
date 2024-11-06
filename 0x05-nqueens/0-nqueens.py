@@ -56,7 +56,7 @@ if __name__ == "__main__":
             Provided that the last is safe in the row
             """
             if row == n - 1:
-                solutions.append(pos_queens[:])
+                sol.append(pos_queens[:])
                 for cord in pos_queens:
                     if cord[1] < n - 1:
                         row = cord[0]
@@ -91,8 +91,8 @@ if __name__ == "__main__":
             continue
         row = row + 1
 
-        for idx, val in enumerate(solutions):
-            if idx == len(solutions):
+        for idx, val in enumerate(sol):
+            if idx == len(sol):
                 print(val, end='')
             else:
                 print(val)
