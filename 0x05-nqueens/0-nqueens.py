@@ -92,7 +92,7 @@ if __name__ == "__main__":
         row = row + 1
 
         for idx, val in enumerate(sol):
-            if idx == len(sol):
+            if idx == len(sol) - 1:
                 print(val, end='')
             else:
                 print(val)
