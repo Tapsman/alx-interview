@@ -37,7 +37,7 @@ const requestNames = async () => {
       }));
     }
   } else {
-    console.error('Error: Got no Characters');
+    console.error('Error: Got no Characters for some reason');
   }
 };
 
