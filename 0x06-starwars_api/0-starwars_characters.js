@@ -6,7 +6,7 @@ const request = require('request');
 
 const movieId = process.argv[2];
 
-const urlfilm = `https://swapi-api.hbtn.io/api/films/` + movieId;
+const urlfilm = `https://swapi-api.alx-tools.com/api/films/` + movieId;
 
 let persons = [];
 const names = [];
