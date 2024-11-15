@@ -5,14 +5,12 @@
 const request = require('request');
 
 const movieId = process.argv[2];
-
-const urlfilm = `https://swapi-api.alx-tools.com/api/films/` + movieId;
-
+const filmEndPoint = `https://swapi-api.alx-tools.com/api/films/` + movieId;
 let persons = [];
 const names = [];
 
 const requestCharacters = async () => {
-  await new Promise(resolve => request(urlfilm, (err, res, body) => {
+  await new Promise(resolve => request(filmEndPoint, (err, res, body) => {
     if (err || res.statusCode !== 200) {
       console.error('Error: ', err, '| StatusCode: ', res.statusCode);
     } else {
