@@ -38,11 +38,11 @@ def isWinner(x, nums):
     for i in range(x):
         primeNums = primeNumbers(nums[i])
         if len(primeNums) % 2 == 0:
-            ben = Ben + 1
+            Ben = Ben + 1
         else:
             Maria = Maria + 1
     if Maria > Ben:
         return 'Maria'
-    elif Ben > 'Maria':
+    elif Ben > Maria:
         return 'Ben'
     return None
